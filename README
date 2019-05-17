@@ -1,0 +1,14 @@
+参考c++ primer实现的一个简单的文档查询程序，
+附带基本的查询表达式解析功能
+
+
+USAGE:
+man
+man occurs 4 times
+	(line3)2.A man becomes learned by asking questions.
+	(line21)20.That man is the richest whose pleasure are the cheapest.
+	(line24)23.No man is content.
+	(line25)24.No man can do two things at once.
+man&~(can|is)
+(man & ~((can | is))) occurs 1 time
+	(line3)2.A man becomes learned by asking questions.
